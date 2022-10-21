@@ -42,6 +42,7 @@ kind: ClusterDeployment
 metadata:
   name: "{{ .Cluster.ClusterName }}"
   namespace: "{{ .Cluster.ClusterName }}"
+  labels: "{{ .Cluster.ClusterLabels }}"
   annotations:
     argocd.argoproj.io/sync-wave: "1"
 spec:
