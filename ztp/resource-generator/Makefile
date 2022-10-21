@@ -1,8 +1,8 @@
-REG_URL ?= quay.io/redhat_emp1
-IMAGE_NAME ?= ztp-site-generator
+REG_URL ?= quay.io/tginer
+IMAGE_NAME ?= ztp-site-generator-clustersetsupport
 IMAGE_URL ?= $(REG_URL)/$(IMAGE_NAME)
 IMAGE_REF ?=
-VERSION ?= latest
+VERSION ?= 0.1
 
 .PHONY: help build push export all
 
